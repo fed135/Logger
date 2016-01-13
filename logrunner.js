@@ -33,6 +33,10 @@
   
   Level.prototype.config = function(config) {};
   
+  Level.prototype.mute = function() {};
+  
+  Level.prototype.unmute = function() {};
+  
   Level.prototype._execute = function(method, payload) {};
   
   /* Selection ----------------------------------------------------------------*/
