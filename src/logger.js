@@ -17,6 +17,7 @@
 
 		// Polyfill
 		console.groupCollapsed = console.groupCollapsed || console.log;
+		console.groupEnd = console.groupEnd || function(){};
 	}
 	
 	/** 
@@ -102,6 +103,7 @@
 				for (var i = 1; i < payload.length; i++) {
 					console[this.method]('%c' + payload[i], this.style);
 				}
+				console.groupEnd();
 			}
 			else console[this.method].apply(console, payload);
 		}
