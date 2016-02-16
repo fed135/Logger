@@ -1,8 +1,7 @@
-# logrunner
+# Logger
 **Console logging for modern browsers**
 
-[![Build Status](https://travis-ci.org/fed135/logrunner.svg?branch=master)](https://travis-ci.org/fed135/logrunner)
-[![Coverage Status](https://coveralls.io/repos/fed135/logrunner/badge.svg)](https://coveralls.io/r/fed135/logrunner)
+[![Build Status](https://travis-ci.org/fed135/Logger.svg?branch=master)](https://travis-ci.org/fed135/logrunner)
 
 ## What is Logger?
 
@@ -30,9 +29,9 @@ It can be loaded as an AMD module or saved globaly.
 
 ## Releases
 
-[Latest release](https://github.com/fed135/logrunner/releases/latest)
+[Latest release](https://github.com/fed135/Logger/releases/latest)
 
-[All releases](https://github.com/fed135/logrunner/releases)
+[All releases](https://github.com/fed135/Logger/releases)
 
 
 ## Usage
@@ -82,8 +81,7 @@ Running `gulp test` will launch the test sequence.
 
 ## Roadmap
 
-[Milestones](https://github.com/fed135/logrunner/milestones)
+[Milestones](https://github.com/fed135/Logger/milestones)
 
 - make usage docs
-- plug into travis + coveralls
 - DocBlock internal methods
