@@ -1,0 +1,20 @@
+<script src="../src/logger.js"></script>
+<script>
+	logger.log('test');
+	logger.warn('test');
+	logger.error('test');
+
+	function a() {
+		b();
+	}
+
+	function b() {
+		c();
+	}
+
+	function c() {
+		triggerAnErrorPlease();
+	}
+
+	a();
+</script>
