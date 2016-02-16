@@ -77,15 +77,13 @@ Running `gulp` will compile new minified and minifed versions.
 
 ## Testing
 
-Running `npm test` will launch the test sequence.
+Running `gulp test` will launch the test sequence.
 
 
 ## Roadmap
 
 [Milestones](https://github.com/fed135/logrunner/milestones)
 
-- Rename repo
 - make usage docs
-- Debug, write tests and plug into travis + coveralls - use gulp
-- Cleanup code
-- Make a dist folder with minified version + release tags
+- plug into travis + coveralls
+- DocBlock internal methods
