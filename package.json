@@ -1,0 +1,41 @@
+{
+  "name": "logrunner",
+  "version": "1.0.0",
+  "description": "A logging utility for the modern web",
+  "main": "src/logrunner.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fed135/logrunner.git"
+  },
+  "keywords": [
+    "logging",
+    "browser",
+    "color",
+    "pipe",
+    "telemetry",
+    "log",
+    "warn",
+    "error",
+    "console",
+    "info"
+  ],
+  "author": "frederic charette",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/fed135/logrunner/issues"
+  },
+  "homepage": "https://github.com/fed135/logrunner#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-minify": "0.0.5",
+    "gulp-mocha": "^2.2.0",
+    "mocha": "^2.4.5"
+  }
+}

@@ -1,9 +1,12 @@
 # logrunner
-Console logging for modern browsers
+**Console logging for modern browsers**
 
-## Logger ?
+[![Build Status](https://travis-ci.org/fed135/logrunner.svg?branch=master)](https://travis-ci.org/fed135/logrunner)
+[![Coverage Status](https://coveralls.io/repos/fed135/logrunner/badge.svg)](https://coveralls.io/r/fed135/logrunner)
 
-This is a logging utility for your browser. 
+## What is Logger?
+
+Logger is a logging utility for your browser. 
 Ever encountered one or more of these issues:
 
 - Need defined (and perhaps customizable) log levels
@@ -13,34 +16,51 @@ Ever encountered one or more of these issues:
 - Need prettier error statements
 
 Logger aims to solve ALL of these issues and more!
-
-## What is it ?
-
-Logger is a library that is build next to the browser's default console and does not override it.
+It's a library that is build next to the browser's default console and does not override it.
 It can be loaded as an AMD module or saved globaly.
 
-## How do I use it?
+   Browser              | Compatibility
+   ---------------------| -----------------------
+   *Chrome*             | Yes
+   *Firefox*            | Yes
+   *IE / Edge*          | Yes
+   *Opera*              | Yes
+   *Safari*             | Yes
 
-Simply import the script, then start configuring:
+
+## Releases
+
+[Latest release](https://github.com/fed135/logrunner/releases/latest)
+
+[All releases](https://github.com/fed135/logrunner/releases)
+
+
+## Usage
+
+Simply import the minified/unminified script from dist, then start configuring:
 
 **Creating log levels**
 
+		// I want an error level for when stuff explodes
     logger.add('critical', {
     	style: 'color:purple;font-weight:bold;'
     });
 
 **Selecting levels**
 
+		// I want to mute everythin in Production
     logger.select('*').mute();	// Mutes all the channels
 
 **Piping**
 
+		// I want to send errors and criticals to my tracking service
 		logger.select(['error', 'critical']).pipe(myTrackingService);
 
 **Changing the style**
 
+		// I want error logs to be sassier
     logger.select('error').style('color:pink;text-shadow:1px 1px 0px rgba(0,0,0,0.4)');
-    // You can use CSS styling!
+    // I can use CSS styling!
 
 **Actually printing stuff**
 
@@ -50,12 +70,22 @@ Simply import the script, then start configuring:
     // These 3 are created by default
 
 
-There ara a TON of other features, feel free to explore!
+## Compiling
 
-## TODO
+Running `gulp` will compile new minified and minifed versions.
 
-- Find a better name
-- List all the cool benefots, features, make usage docs, etc.
-- Debug, write tests and plug into travis
+
+## Testing
+
+Running `npm test` will launch the test sequence.
+
+
+## Roadmap
+
+[Milestones](https://github.com/fed135/logrunner/milestones)
+
+- Rename repo
+- make usage docs
+- Debug, write tests and plug into travis + coveralls - use gulp
 - Cleanup code
 - Make a dist folder with minified version + release tags
