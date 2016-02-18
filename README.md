@@ -1,5 +1,4 @@
 # Logger
-**Console logging for modern browsers**
 
 [![Build Status](https://travis-ci.org/fed135/Logger.svg?branch=master)](https://travis-ci.org/fed135/logrunner)
 
@@ -19,6 +18,8 @@ It's a library that is build next to the browser's default console and does not 
 It can be loaded as an AMD module or saved globaly.
 
 ![logger](http://i231.photobucket.com/albums/ee109/FeD135/logger.jpg)
+
+And it's super light: 1.74Kb (minified)!
 
 ## Compatibility
 
