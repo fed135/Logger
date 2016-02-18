@@ -1,5 +1,5 @@
 {
-  "name": "logger",
+  "name": "logger.js",
   "description": "Fancy leveled logging for professional web apps",
   "main": [
     "dist/logger-min.js",

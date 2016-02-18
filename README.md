@@ -1,6 +1,8 @@
 # Logger
 
-[![Build Status](https://travis-ci.org/fed135/Logger.svg?branch=master)](https://travis-ci.org/fed135/logrunner)
+[![Build Status](https://travis-ci.org/fed135/Logger.svg?branch=master)](https://travis-ci.org/fed135/Logger)
+[![NPM](https://img.shields.io/npm/v/console-logger.js.svg)](https://www.npmjs.com/package/console-logger.js)
+[![Bower](https://img.shields.io/bower/v/logger.js.svg)](#)
 
 ## What is Logger?
 

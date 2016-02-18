@@ -1,5 +1,5 @@
 {
-  "name": "logger",
+  "name": "console-logger.js",
   "version": "1.0.0",
   "description": "A logging utility for the modern web",
   "repository": {
