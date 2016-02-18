@@ -1,0 +1,27 @@
+{
+  "name": "logger",
+  "description": "Fancy leveled logging for professional web apps",
+  "main": [
+    "dist/logger-min.js",
+  ],
+  "moduleType": [
+    "amd",
+    "globals"
+  ],
+  "keywords": [
+    "log",
+    "warn",
+    "error",
+    "logging",
+    "console",
+    "telemetry"
+  ],
+  "authors": [
+    "Frederic Charette <fredericcharette@gmail.com>"
+  ],
+  "license": "GPL-V3",
+  "ignore": [
+    "src",
+    "tests"
+  ]
+}
