@@ -18,6 +18,10 @@ Logger aims to solve ALL of these issues and more!
 It's a library that is build next to the browser's default console and does not override it.
 It can be loaded as an AMD module or saved globaly.
 
+![logger](http://i231.photobucket.com/albums/ee109/FeD135/logger.jpg)
+
+## Compatibility
+
    Browser              | Compatibility
    ---------------------| -----------------------
    *Chrome*             | Yes
