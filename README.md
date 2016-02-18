@@ -14,8 +14,8 @@ Ever encountered one or more of these issues:
 - Need prettier error statements
 
 Logger aims to solve ALL of these issues and more!
-It's a library that is build next to the browser's default console and does not override it.
-It can be loaded as an AMD module or saved globaly.
+It's a library that is build **next** to the browser's default console and does **not** override it.
+It can be loaded as an AMD module or used globaly.
 
 ![logger](http://i231.photobucket.com/albums/ee109/FeD135/logger.jpg)
 
@@ -43,26 +43,37 @@ And it's super light: 1.74Kb (minified)!
 
 Simply import the minified/unminified script from dist, then start configuring:
 
+**Loading the module**
+
+    // If requireJS or another AMD-compatible loader is detected:
+    require('logger', function(logger) {
+        logger.log('Hello there!');
+    });
+    
+    // Or else, it should be available through the global namespace:
+    window.logger.log('Bloody hell!');
+    
+
 **Creating log levels**
 
-		// I want an error level for when stuff explodes
+    // I want an error level for when stuff explodes
     logger.add('critical', {
     	style: 'color:purple;font-weight:bold;'
     });
 
 **Selecting levels**
 
-		// I want to mute everythin in Production
+    // I want to mute everythin in Production
     logger.select('*').mute();	// Mutes all the channels
 
 **Piping**
 
-		// I want to send errors and criticals to my tracking service
-		logger.select(['error', 'critical']).pipe(myTrackingService);
+    // I want to send errors and criticals to my tracking service
+    logger.select(['error', 'critical']).pipe(myTrackingService);
 
 **Changing the style**
 
-		// I want error logs to be sassier
+    // I want error logs to be sassier
     logger.select('error').style('color:pink;text-shadow:1px 1px 0px rgba(0,0,0,0.4)');
     // I can use CSS styling!
 
@@ -90,3 +101,4 @@ Running `gulp test` will launch the test sequence.
 
 - make usage docs
 - DocBlock internal methods
+- Try to bind to console methods - simplifies the stack trace
