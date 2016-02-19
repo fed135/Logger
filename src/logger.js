@@ -74,14 +74,12 @@
 		this.muted = config.muted || false;
 	}
 	
-	Level.prototype.mute = function() {
-		this.muted = true;
-	};
-	
-	Level.prototype.unmute = function() {
-		this.muted = false;
-	};
-	
+	/**
+	 * Runs a console method in that level
+	 * @private
+	 * @method _execute
+	 * @memberof Level
+	 */
 	Level.prototype._execute = function() {
 		var payload = Array.prototype.slice.call(arguments).pop();
 		var _isError = false;
@@ -115,6 +113,11 @@
 	
 	/* Selection ----------------------------------------------------------------*/
 
+	/**
+	 * Represents a group of levels that can be all edited at once
+	 * @construtor
+	 * @param {Array} levels The list of levels comprised in the selection
+	 */
 	function Selection(levels) {
 		this._levels = levels;
 
@@ -127,12 +130,22 @@
 		}, this);
 	}
 
+	/**
+	 * Mutes a selection
+	 * @method mute
+	 * @memberof Selection
+	 */
 	Selection.prototype.mute = function() {
 		this._levels.forEach(function(l) {
 			l.muted = true;
 		});
 	};
 
+	/**
+	 * Unmutes a selection
+	 * @method unmute
+	 * @memberof Selection
+	 */
 	Selection.prototype.unmute = function() {
 		this._levels.forEach(function(l) {
 			l.muted = false;
@@ -141,6 +154,13 @@
 
 	/* Pretty error parser ------------------------------------------------------*/
 
+	/**
+	 * Builds a nice error string
+	 * @private
+	 * @method _parseErrorMessage
+	 * @param {Error} error The error to parse
+	 * @returns {Array} The parsed error traces
+	 */
 	function _parseErrorMessage(error) {
 		return (error.stack.split('\n')).splice(0,4).map(function(e, i){
 			if (i > 0) {
@@ -160,6 +180,7 @@
 
 	/* Exports ------------------------------------------------------------------*/
 	
+	// Node - unit tests
 	if (typeof module !== 'undefined') {
 		module.exports = _instance;
 	}

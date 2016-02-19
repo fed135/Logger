@@ -36,9 +36,21 @@ And it's super light: 1.74Kb (minified)!
 
 ## Releases
 
+**Static**
+
 [Latest release](https://github.com/fed135/Logger/releases/latest)
 
 [All releases](https://github.com/fed135/Logger/releases)
+
+
+**NPM**
+
+    $ npm install console-logger.js
+
+
+**Bower**
+
+    $ bower install logger.js
 
 
 ## Usage
@@ -100,7 +112,3 @@ Running `gulp test` will launch the test sequence.
 ## Roadmap
 
 [Milestones](https://github.com/fed135/Logger/milestones)
-
-- make usage docs
-- DocBlock internal methods
-- Try to bind to console methods - simplifies the stack trace
